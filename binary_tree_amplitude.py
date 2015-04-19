@@ -47,8 +47,8 @@ def maxdiff(maxN,minN, node):
         minN = minN if minN <= node.x else node.x
         return (maxN,minN)
     #diffMax = abs(maxN-minN)
-    maxN1 = maxN if maxN >= node.x and maxN > -1 else node.x # node.x is max if maxN is less than it
-    minN1 = minN if minN <= node.x and minN > -1 else node.x # node.x is min if minN is > than it
+    maxN1 = maxN if maxN != None and maxN >= node.x  else node.x # node.x is max if maxN is less than it
+    minN1 = minN if minN != None and minN <= node.x  else node.x # node.x is min if minN is > than it
     #print "max,min %d,%d" % (maxN1,minN1)
     maxN2 = maxN1
     minN2 = minN1
@@ -67,6 +67,6 @@ def maxdiff(maxN,minN, node):
 
 if __name__=="__main__":
     
-    max,min = maxdiff(-1,-1,tree)
+    max,min = maxdiff(None,None,tree)
     print "max,min (%d,%d)" % (max,min)
     print "Solution is %d" % abs(max-min)
