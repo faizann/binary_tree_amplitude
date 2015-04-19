@@ -1,15 +1,15 @@
 # binary_tree_amplitude
 Codility binary tree amplitude
 
-Find the max/min in an unordered tree on a path 
-5
-|__8
-|____12
-|______1
-|____6
-|__9
-|____7
-|______2
-|____4
-|______3
+Find the max/min in an unordered tree on a path <br />
+5<br />
+|__8<br />
+|____12<br />
+|______1<br />
+|____6<br />
+|__9<br />
+|____7<br />
+|______2<br />
+|____4<br />
+|______3<br />
 
